@@ -1,0 +1,56 @@
+// nav
+nav.tabbar
+  width: 100%
+  height: 50px
+  position: fixed
+  display: flex
+  bottom: 0
+  left: 0
+  background: #3495D5
+  box-shadow: 0px -5px 10px rgba(0,0,0,0.1)
+
+  ul
+    display: flex
+    width: 100%
+    li
+      flex: 1
+      padding: 2px 0 4px 0
+
+      span
+        width: 100%
+        display: block
+        text-align: center
+        font-size: 11px
+        font-weight: 600
+        color: rgba(255,255,255,0.6)
+      &.active span,
+      &:hover span
+        color: #fff
+
+.tabbar-icon
+  width: 32px
+  height: 32px
+  margin: auto
+  transition: all 0.5s ease
+  background: no-repeat center
+
+.subway-link
+  .tabbar-icon
+    background-image: url(img/TabBar_Subway_Inactive.svg)
+  &.active .tabbar-icon,
+  &:hover .tabbar-icon
+    background-image: url(img/TabBar_Subway_Active.svg)
+
+.map-link
+  .tabbar-icon
+    background-image: url(img/TabBar_Map_Inactive.svg)
+  &.active .tabbar-icon,
+  &:hover .tabbar-icon
+    background-image: url(img/TabBar_Map_Active.svg)
+
+.alert-link
+  .tabbar-icon
+    background-image: url(img/TabBar_Alert_Inactive.svg)
+  &.active .tabbar-icon,
+  &:hover .tabbar-icon
+    background-image: url(img/TabBar_Alert_Active.svg)

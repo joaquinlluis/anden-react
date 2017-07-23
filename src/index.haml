@@ -24,14 +24,16 @@
     %meta{ :name => "viewport", :content => "width=device-width,initial-scale=1" }
     %meta{ :charset => "UTF-8" }
     %script{:src => "js/jquery-latest.min.js"}
+    %script{:src => "js/main-scroll.js"}
     %link{:href => "https://fonts.googleapis.com/css?family=Work+Sans:400,500,600", :rel => "stylesheet", :type => "text/css"}/
 
   %body
     %header
       .logo
-      .about-us-link
+      %a.about-us-link
       .last-update
         Última actualización hoy a las 19:37
+      .scroll-shadow
 
     %main
       .main-container
@@ -47,72 +49,74 @@
                   Cada 8 minutos
           %li
             %a.cell
-              .cell-image.line-a
-                A
+              .cell-image.line-b
+                B
               .cell-information
                 %h3.cell-title
-                  San Pedrito a Plaza de mayo
+                  Juan Manuel de Rosas a Alem
                 %span.cell-subtitle
                   Cada 8 minutos
           %li
             %a.cell
-              .cell-image.line-a
-                A
+              .cell-image.line-c
+                C
               .cell-information
                 %h3.cell-title
-                  San Pedrito a Plaza de mayo
+                  Constitución a Retiro
                 %span.cell-subtitle
                   Cada 8 minutos
           %li        
             %a.cell
-              .cell-image.line-a
-                A
+              .cell-image.line-d
+                D
               .cell-information
                 %h3.cell-title
-                  San Pedrito a Plaza de mayo
+                  Congreso de Tucumán a Catedral
                 %span.cell-subtitle
                   Cada 8 minutos
           %li        
             %a.cell
-              .cell-image.line-a
-                A
+              .cell-image.line-e
+                E
               .cell-information
                 %h3.cell-title
-                  San Pedrito a Plaza de mayo
+                  Plaza de los Virreyes a Bolívar
                 %span.cell-subtitle
                   Cada 8 minutos
           %li        
             %a.cell
-              .cell-image.line-a
-                A
+              .cell-image.line-h
+                H
               .cell-information
                 %h3.cell-title
-                  San Pedrito a Plaza de mayo
+                  Hospitales a Las Heras
                 %span.cell-subtitle
                   Cada 8 minutos
           %li        
             %a.cell
-              .cell-image.line-a
-                A
+              .cell-image.line-p
+                P
               .cell-information
                 %h3.cell-title
-                  San Pedrito a Plaza de mayo
+                  Intendente Saguier a Centro Cívico
                 %span.cell-subtitle
                   Cada 8 minutos
+
+        %span.information-source
+          Información en tiempo real proporcionada por Metrovías S.A.
 
 
     %nav.tabbar
       %ul
-        %li.subte-link
+        %li.subway-link.active
           .tabbar-icon
-
           %span
             Subte
         %li.map-link
           .tabbar-icon
           %span
             Mapa
-        %li.alerts-link
+        %li.alert-link
           .tabbar-icon
           %span
             Alertas
