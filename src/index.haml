@@ -28,98 +28,160 @@
     %link{:href => "https://fonts.googleapis.com/css?family=Work+Sans:400,500,600", :rel => "stylesheet", :type => "text/css"}/
 
   %body
-    %header
-      .logo
-      %a.about-us-link
-      .last-update
-        Última actualización hoy a las 19:37
-      .scroll-shadow
+    .wrapper.line
+      %nav.navbar.line-b
+        .navbar-backbutton
+        .navbar-title
+          Línea B
+        .navbar-subtitle
+          Cada 8 minutos
 
-    %main
-      .main-container
+      .line-card-wrapper.line-b
+        .line-card
+          .line-card-row.recorrido
+            .line-card-title
+              RECORRIDO
+            .line-card-info
+              Juan Manuel de Rosas a Leandro N. Alem
+          %hr
+          .line-card-row
+            .line-card-title
+              HORARIO
+            .line-card-info
+              De 08:00 a 23:30
+          .line-card-row
+            .line-card-title
+              COMBINACIÓN
+          %hr
+      .stations.line-b
+        .view-map-wrapper
+          %a.view-map
+            VER MAPA
         %ul
-          %li
-            %a.cell
-              .cell-image.line-a
-                A
-              .cell-information
-                %h3.cell-title
-                  San Pedrito a Plaza de mayo
-                %span.cell-subtitle
-                  Cada 8 minutos
-          %li
-            %a.cell
-              .cell-image.line-b
-                B
-              .cell-information
-                %h3.cell-title
-                  Juan Manuel de Rosas a Alem
-                %span.cell-subtitle
-                  Cada 8 minutos
-          %li
-            %a.cell
-              .cell-image.line-c
-                C
-              .cell-information
-                %h3.cell-title
-                  Constitución a Retiro
-                %span.cell-subtitle
-                  Cada 8 minutos
-          %li        
-            %a.cell
-              .cell-image.line-d
-                D
-              .cell-information
-                %h3.cell-title
-                  Congreso de Tucumán a Catedral
-                %span.cell-subtitle
-                  Cada 8 minutos
-          %li        
-            %a.cell
-              .cell-image.line-e
-                E
-              .cell-information
-                %h3.cell-title
-                  Plaza de los Virreyes a Bolívar
-                %span.cell-subtitle
-                  Cada 8 minutos
-          %li        
-            %a.cell
-              .cell-image.line-h
-                H
-              .cell-information
-                %h3.cell-title
-                  Hospitales a Las Heras
-                %span.cell-subtitle
-                  Cada 8 minutos
-          %li        
-            %a.cell
-              .cell-image.line-p
-                P
-              .cell-information
-                %h3.cell-title
-                  Intendente Saguier a Centro Cívico
-                %span.cell-subtitle
-                  Cada 8 minutos
-
-        %span.information-source
-          Información en tiempo real proporcionada por Metrovías S.A.
+          %li.station
+            %a.station-container
+              .station-bullet
+              .station-info
+                .station-title
+                  Juan Manuel de Rosas
+          %li.station
+            .station-combination-marker.line-a
+            %a.station-container
+              .station-bullet
+              .station-info
+                .station-title
+                  Juan Manuel de Rosas
+                .station-combination
+                  Combinación Línea A
+          %li.station
+            %a.station-container
+              .station-bullet
+              .station-info
+                .station-title
+                  Juan Manuel de Rosas
+          %li.station
+            %a.station-container
+              .station-bullet
+              .station-info
+                .station-title
+                  Juan Manuel de Rosas
 
 
-    %nav.tabbar
-      %ul
-        %li.subway-link.active
-          .tabbar-icon
-          %span
-            Subte
-        %li.map-link
-          .tabbar-icon
-          %span
-            Mapa
-        %li.alert-link
-          .tabbar-icon
-          %span
-            Alertas
+
+    .wrapper.home
+      %header
+        .logo
+        %a.about-us-link
+        .last-update
+          Última actualización hoy a las 19:37
+        .scroll-shadow-wrapper
+          .scroll-shadow
+
+      %main
+        .main-container
+          %ul
+            %li
+              %a.cell
+                .cell-image.line-a
+                  A
+                .cell-information
+                  %h3.cell-title
+                    San Pedrito a Plaza de mayo
+                  %span.cell-subtitle
+                    Cada 8 minutos
+            %li
+              %a.cell
+                .cell-image.line-b
+                  B
+                .cell-information
+                  %h3.cell-title
+                    Juan Manuel de Rosas a Alem
+                  %span.cell-subtitle
+                    Cada 8 minutos
+            %li
+              %a.cell
+                .cell-image.line-c
+                  C
+                .cell-information
+                  %h3.cell-title
+                    Constitución a Retiro
+                  %span.cell-subtitle
+                    Cada 8 minutos
+            %li        
+              %a.cell
+                .cell-image.line-d
+                  D
+                .cell-information
+                  %h3.cell-title
+                    Congreso de Tucumán a Catedral
+                  %span.cell-subtitle
+                    Cada 8 minutos
+            %li        
+              %a.cell
+                .cell-image.line-e
+                  E
+                .cell-information
+                  %h3.cell-title
+                    Plaza de los Virreyes a Bolívar
+                  %span.cell-subtitle
+                    Cada 8 minutos
+            %li        
+              %a.cell
+                .cell-image.line-h
+                  H
+                .cell-information
+                  %h3.cell-title
+                    Hospitales a Las Heras
+                  %span.cell-subtitle
+                    Cada 8 minutos
+            %li        
+              %a.cell
+                .cell-image.line-p
+                  P
+                .cell-information
+                  %h3.cell-title
+                    Intendente Saguier a Centro Cívico
+                  %span.cell-subtitle
+                    Cada 8 minutos
+
+          %span.information-source
+            Información en tiempo real proporcionada por Metrovías S.A.
+
+
+      %nav.tabbar
+        %ul
+          %li.subway-link.active
+            .tabbar-icon
+            %span
+              Subte
+          %li.map-link
+            .tabbar-icon
+            %span
+              Mapa
+          %li.alert-link
+            .tabbar-icon
+            %span
+              Alertas
 
   %script
     $(function() {
