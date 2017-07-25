@@ -146,10 +146,22 @@ main
     display: none
   &:last-child:after
     display: none
+
 .station-container
   padding: 20px 10px 20px 46px
   display: block
-.station-combination-marker
+  &:after
+    content: ''
+    width: 6px
+    height: 6px
+    position: absolute
+    right: 16px
+    top: 50%
+    margin-top: -5px
+    transform: rotate(45deg)
+    border-top: 2px solid #ccc
+    border-right: 2px solid #ccc
+
 .station-bullet
   width: 20px
   height: 20px
@@ -161,6 +173,14 @@ main
   border: 5px solid #ccc
   z-index: 1
 .station-info
+  width: 100%
+  overflow: hidden
+.station-title,
+.station-combination
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
 .station-title
   font-size: 17px
   font-weight: 500
@@ -174,6 +194,7 @@ main
   &.line-b .station-bullet
     border-color: $color-b
 
+.station-combination-marker
 
 
 
